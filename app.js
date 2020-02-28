@@ -28,7 +28,8 @@ let commands = [];
             const members = msg.channel.members;
             let memList = [];
             members.forEach(mem => {
-                memList.push(mem.id);
+                if(!mem.user.bot)
+                    memList.push(mem.id);
             });
             msg.reply(userIdToMention(memList[Math.floor(Math.random()*memList.length)]));
         }, "Roll a random user from all the users in the current channel"));
@@ -37,7 +38,7 @@ let commands = [];
             let memList = [];
             members.forEach(mem => {
                 let pres = mem.presence.status;
-                if(pres == "online")
+                if(pres == "online" && !mem.user.bot)
                     memList.push(mem.id);
             });
             msg.reply(userIdToMention(memList[Math.floor(Math.random()*memList.length)]));
@@ -47,7 +48,7 @@ let commands = [];
             let memList = [];
             members.forEach(mem => {
                 let pres = mem.presence.status;
-                if(pres != "online")
+                if(pres != "online" && !mem.user.bot)
                     memList.push(mem.id);
             });
             msg.reply(userIdToMention(memList[Math.floor(Math.random()*memList.length)]));
