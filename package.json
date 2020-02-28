@@ -11,6 +11,8 @@
   "dependencies": {
     "bufferutil": "^4.0.1",
     "discord.js": "^11.5.1",
-    "erlpack": "github:hammerandchisel/erlpack"
+    "erlpack": "github:hammerandchisel/erlpack",
+    "forever": "^2.0.0",
+    "forever-monitor": "^2.0.0"
   }
 }
