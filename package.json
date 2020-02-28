@@ -1,0 +1,16 @@
+{
+  "name": "getrandomuser",
+  "version": "0.0.1",
+  "description": "Get random discord user",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "nick kinney",
+  "license": "ISC",
+  "dependencies": {
+    "bufferutil": "^4.0.1",
+    "discord.js": "^11.5.1",
+    "erlpack": "github:hammerandchisel/erlpack"
+  }
+}
