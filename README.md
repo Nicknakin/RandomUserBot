@@ -5,4 +5,4 @@ Initialize bot by creating an auth.json with fields
 }
 ````
 
-run `npm install` and then `node app.js`
+Run `npm install` and then `node app.js`
